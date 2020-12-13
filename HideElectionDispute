@@ -1,0 +1,18 @@
+// ==UserScript==
+// @name         Hide Election Dispute Notification
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Hides Election Claim Disputed from Twitter 
+// @author       Sarah Eaglesfield
+// @match        https://twitter.com/*
+// @grant        GM_addStyle
+// @require  http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js
+// @require  https://gist.github.com/raw/2625891/waitForKeyElements.js
+// ==/UserScript==
+
+waitForKeyElements("div.css-1dbjc4n.r-1awozwy.r-xoduu5.r-18u37iz.r-16y2uox", hideNode);
+
+
+function hideNode (jNode) {
+    jNode.hide ();
+}
