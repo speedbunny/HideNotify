@@ -13,5 +13,10 @@ https://addons.mozilla.org/en-GB/firefox/addon/greasemonkey/
 
 GOOGLE CHROME:
 
-1. Copy the code into notepad and save as hideElection.user.js 
-2. Drag & drop into your Chrome browser to install 
+1. Install Tampermonkey Extension
+https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo/related?hl=en
+
+2. Click on the robot monkey & choose New User Script.
+
+3. Copy / Paste the code and Save.
+
