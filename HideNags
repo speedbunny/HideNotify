@@ -1,0 +1,18 @@
+// ==UserScript==
+// @name         Hide Nags
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  HHide Professional Upgrade Nag Screen On Analytics from Twitter 
+// @author       Sarah Eaglesfield
+// @match        https://twitter.com/*
+// @grant        GM_addStyle
+// @require  http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js
+// @require  https://gist.github.com/raw/2625891/waitForKeyElements.js
+// ==/UserScript==
+
+waitForKeyElements("div.css-1dbjc4n r-1habvwh r-kemksi r-1kqtdi0 r-1phboty r-5kkj8d r-1p0dtai r-18u37iz r-1d2f490 r-494qqr r-gtdqiz", hideNode);
+
+
+function hideNode (jNode) {
+    jNode.hide ();
+}
